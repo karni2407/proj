@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container
+{
+    width: 100%;
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col2 img
+{
+    float: left;
+    max-width: 50%;
+    mix-blend-mode: screen; 
+    display: inline-block;
+}
+.header
+{
+    background: linear-gradient(black,cyan);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.form-box
+{
+    width: 90%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(darkcyan,cadetblue);
+    padding: 50px 60px 70px;
+    text-align: center;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.8);
+}
+.form-box h1
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: darkslateblue;
+    position: relative;
+}
+.form-box h1::after
+{
+    content: '';
+    width: 70px;
+    height: 5px;
+    border-radius: 10px;
+    background: orange;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field
+{
+    background: white;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-content: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input
+{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i
+{
+ padding-top: 16px;
+ margin-left: 15px;
+ color: dimgray;
+}
+.form-box p
+{
+    text-align: left;
+    font-size: 13px;
+}
+.form-box a
+{
+    text-decoration: none;
+    color: yellowgreen;
+}
+.btn-field
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.btn-field button
+{
+    flex-basis: 48%;
+    background: rebeccapurple;
+    color: ghostwhite;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
